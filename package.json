@@ -1,0 +1,17 @@
+{
+  "name": "kenekt-date-parser",
+  "version": "1.0.0",
+  "description": "Kenekt date parser over moment",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Prabin Deka",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
