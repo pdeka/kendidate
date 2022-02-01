@@ -1,6 +1,6 @@
 const moment = require('moment')
 
-module.exports = function parse(value, locale) {
+module.exports = function kenektDateParser(value, locale) {
     moment.locale(locale);
     let dm = (locale === "en-US") ? 'M/D' : 'D/M'
 
