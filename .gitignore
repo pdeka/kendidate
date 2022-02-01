@@ -1,1 +1,13 @@
-node_module
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+snpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
