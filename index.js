@@ -50,7 +50,5 @@
             return null;
         }
     };
-    console.log("I AM HERE");
     return hooks;
-
 })));

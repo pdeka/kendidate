@@ -1,7 +1,7 @@
 {
-  "name": "kenekt-date-parser",
+  "name": "kendidate",
   "version": "1.0.1",
-  "description": "Kenekt date parser over moment",
+  "description": "Date parser over moment",
   "main": "./index.js",
   "scripts": {
     "test": "jest"
