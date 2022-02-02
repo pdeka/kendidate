@@ -1,6 +1,6 @@
 {
   "name": "kendidate",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Date parser over moment",
   "main": "./index.js",
   "scripts": {
