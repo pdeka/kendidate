@@ -2,7 +2,7 @@
   "name": "kenekt-date-parser",
   "version": "1.0.0",
   "description": "Kenekt date parser over moment",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "jest"
   },

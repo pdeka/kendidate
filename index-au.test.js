@@ -1,5 +1,10 @@
-const kenektDateParser = require('./index');
+/**
+ * @jest-environment jsdom
+ */
+
+const {kenektDateParser} = require('./index');
 const moment = require('moment')
+window.moment = moment;
 
 moment.locale('en-AU')
 
