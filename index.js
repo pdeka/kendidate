@@ -3,8 +3,6 @@
   typeof define === 'function' && define.amd ? define(factory) : global.kendidate = factory()
 }(this, (function () { 'use strict';
 
-    var hookCallback;
-
     var hooks = {};
     hooks.parse = function (value, locale) {
         window.moment.locale(locale);
