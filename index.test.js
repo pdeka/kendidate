@@ -49,13 +49,21 @@ test('with Australian Locale', () => {
   expect(parse('20/01/20221:14', 'en-AU').getMonth()).toEqual(0);
   expect(parse('20/01/20221:14', 'en-AU').getDate()).toEqual(20);
 
-  // expect(parse('20/01/202201:14:20 PM', 'en-AU').getFullYear()).toEqual(2022);
-  // expect(parse('20/01/202201:14:20 PM', 'en-AU').getMonth()).toEqual(0);
-  // expect(parse('20/01/202201:14:20 PM', 'en-AU').getDate()).toEqual(20);
-  //
+  expect(parse('20/01/202201:14:20 PM', 'en-AU').getFullYear()).toEqual(2022);
+  expect(parse('20/01/202201:14:20 PM', 'en-AU').getMonth()).toEqual(0);
+  expect(parse('20/01/202201:14:20 PM', 'en-AU').getDate()).toEqual(20);
+
   expect(parse('20/01/202201:14:20PM', 'en-AU').getFullYear()).toEqual(2022);
   expect(parse('20/01/202201:14:20PM', 'en-AU').getMonth()).toEqual(0);
   expect(parse('20/01/202201:14:20PM', 'en-AU').getDate()).toEqual(20);
+
+  expect(parse('20/01/20221:14:20 PM', 'en-AU').getFullYear()).toEqual(2022);
+  expect(parse('20/01/20221:14:20 PM', 'en-AU').getMonth()).toEqual(0);
+  expect(parse('20/01/20221:14:20 PM', 'en-AU').getDate()).toEqual(20);
+
+  expect(parse('20/01/20221:14:20PM', 'en-AU').getFullYear()).toEqual(2022);
+  expect(parse('20/01/20221:14:20PM', 'en-AU').getMonth()).toEqual(0);
+  expect(parse('20/01/20221:14:20PM', 'en-AU').getDate()).toEqual(20);
 
   expect(parse('2020-01-20', 'en-AU').getFullYear()).toEqual(2020);
   expect(parse('2020-01-20', 'en-AU').getMonth()).toEqual(0);
@@ -109,17 +117,33 @@ test('with US Locale', () => {
   expect(parse('01/20/20221:14', 'en-US').getMonth()).toEqual(0);
   expect(parse('01/20/20221:14', 'en-US').getDate()).toEqual(20);
 
-  // expect(parse('20/01/202201:14:20 PM', 'en-US').getFullYear()).toEqual(2022);
-  // expect(parse('20/01/202201:14:20 PM', 'en-US').getMonth()).toEqual(0);
-  // expect(parse('20/01/202201:14:20 PM', 'en-US').getDate()).toEqual(20);
-  //
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getFullYear()).toEqual(2022);
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getDate()).toEqual(20);
+
   expect(parse('01/20/202201:14:20PM', 'en-US').getFullYear()).toEqual(2022);
   expect(parse('01/20/202201:14:20PM', 'en-US').getMonth()).toEqual(0);
   expect(parse('01/20/202201:14:20PM', 'en-US').getDate()).toEqual(20);
 
-  // expect(parse('2020-20-01', 'en-US').getFullYear()).toEqual(2020);
-  // expect(parse('2020-20-01', 'en-US').getMonth()).toEqual(0);
-  // expect(parse('2020-20-01', 'en-US').getDate()).toEqual(20);
+  expect(parse('01/20/20221:14:20 PM', 'en-US').getFullYear()).toEqual(2022);
+  expect(parse('01/20/20221:14:20 PM', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01/20/20221:14:20 PM', 'en-US').getDate()).toEqual(20);
+
+  expect(parse('01/20/20221:14:20PM', 'en-US').getFullYear()).toEqual(2022);
+  expect(parse('01/20/20221:14:20PM', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01/20/20221:14:20PM', 'en-US').getDate()).toEqual(20);
+
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getFullYear()).toEqual(2022);
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01/20/202201:14:20 PM', 'en-US').getDate()).toEqual(20);
+
+  expect(parse('01/20/202201:14:20PM', 'en-US').getFullYear()).toEqual(2022);
+  expect(parse('01/20/202201:14:20PM', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01/20/202201:14:20PM', 'en-US').getDate()).toEqual(20);
+
+  expect(parse('01-20-2020', 'en-US').getFullYear()).toEqual(2020);
+  expect(parse('01-20-2020', 'en-US').getMonth()).toEqual(0);
+  expect(parse('01-20-2020', 'en-US').getDate()).toEqual(20);
 
   expect(parse('01/20/2022 1:14', 'en-US').getFullYear()).toEqual(2022);
   expect(parse('01/20/2022 1:14', 'en-US').getMonth()).toEqual(0);
