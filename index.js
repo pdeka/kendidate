@@ -6,7 +6,7 @@
     var hookCallback;
 
     var hooks = {};
-    hooks.kenektDateParser = function (value, locale) {
+    hooks.parse = function (value, locale) {
         window.moment.locale(locale);
         let dm = (locale === "en-US") ? 'M/D' : 'D/M'
 
