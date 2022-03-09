@@ -81,6 +81,14 @@ test('with US Locale', () => {
   expect(parse('02/05/2021', 'en-US').getMonth()).toEqual(1);
   expect(parse('02/05/2021', 'en-US').getDate()).toEqual(5);
 
+  expect(parse('2061-08-10', 'en-US').getFullYear()).toEqual(2061);
+  expect(parse('2061-08-10', 'en-US').getMonth()).toEqual(7);
+  expect(parse('2061-08-10', 'en-US').getDate()).toEqual(10);
+
+  expect(parse('61-08-10', 'en-US').getFullYear()).toEqual(1961);
+  expect(parse('61-08-10', 'en-US').getMonth()).toEqual(7);
+  expect(parse('61-08-10', 'en-US').getDate()).toEqual(10);
+
   expect(parse('01/20/2022 09:14 PM', 'en-US').getFullYear()).toEqual(2022);
   expect(parse('01/20/2022 09:14 PM', 'en-US').getMonth()).toEqual(0);
   expect(parse('01/20/2022 09:14 PM', 'en-US').getDate()).toEqual(20);
