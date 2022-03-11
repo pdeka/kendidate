@@ -74,6 +74,15 @@ test('with Australian Locale', () => {
   expect(parse('20/01/2022 1:14', 'en-AU').getDate()).toEqual(20);
 });
 
+test('invalid date', () => {
+  moment.locale('en-AU')
+  expect(parse('2087-13-13', 'en-AU')).toEqual('');
+
+  moment.locale('en-US')
+  expect(parse('20/12/21', 'en-US')).toEqual('');
+  expect(!parse('20/12/21', 'en-US')).toEqual(true);
+});
+
 test('with US Locale', () => {
   moment.locale('en-US')
 
